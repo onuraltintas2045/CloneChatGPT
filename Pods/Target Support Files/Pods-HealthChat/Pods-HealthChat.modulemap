@@ -1,0 +1,6 @@
+framework module Pods_HealthChat {
+  umbrella header "Pods-HealthChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

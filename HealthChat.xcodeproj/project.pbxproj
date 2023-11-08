@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		328923223D3E7C8C2E6D90D7 /* Pods_HealthChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBBA11529D85FEB2E22CA5 /* Pods_HealthChat.framework */; };
+		77654C592AB1909F00C1C26A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77654C582AB1909F00C1C26A /* AppDelegate.swift */; };
+		77654C5B2AB1909F00C1C26A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77654C5A2AB1909F00C1C26A /* SceneDelegate.swift */; };
+		77654C5D2AB1909F00C1C26A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77654C5C2AB1909F00C1C26A /* ViewController.swift */; };
+		77654C622AB190A100C1C26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77654C612AB190A100C1C26A /* Assets.xcassets */; };
+		77654C652AB190A100C1C26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77654C632AB190A100C1C26A /* LaunchScreen.storyboard */; };
+		77654C6E2AB197D800C1C26A /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 77654C6D2AB197D800C1C26A /* OpenAI */; };
+		77654C702AB19BBB00C1C26A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77654C6F2AB19BBB00C1C26A /* ViewModel.swift */; };
+		776E07E72AB98A1E001EAADC /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E07E62AB98A1E001EAADC /* UITableViewExtension.swift */; };
+		776E07EA2AB9A65C001EAADC /* PromptAndResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776E07E92AB9A65C001EAADC /* PromptAndResponseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E13CBA950E6EA0CEF4EB9DE /* Pods-HealthChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthChat.debug.xcconfig"; path = "Target Support Files/Pods-HealthChat/Pods-HealthChat.debug.xcconfig"; sourceTree = "<group>"; };
+		248724F428B092CB41D88BB1 /* Pods-sdkTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdkTest.release.xcconfig"; path = "Target Support Files/Pods-sdkTest/Pods-sdkTest.release.xcconfig"; sourceTree = "<group>"; };
+		49637E8CCB31F52DAB4D1A6D /* Pods-HealthChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthChat.release.xcconfig"; path = "Target Support Files/Pods-HealthChat/Pods-HealthChat.release.xcconfig"; sourceTree = "<group>"; };
+		77654C552AB1909F00C1C26A /* HealthChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77654C582AB1909F00C1C26A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77654C5A2AB1909F00C1C26A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		77654C5C2AB1909F00C1C26A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77654C612AB190A100C1C26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77654C642AB190A100C1C26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77654C662AB190A100C1C26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77654C6F2AB19BBB00C1C26A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		776E07E62AB98A1E001EAADC /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		776E07E92AB9A65C001EAADC /* PromptAndResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptAndResponseModel.swift; sourceTree = "<group>"; };
+		B7DBBA11529D85FEB2E22CA5 /* Pods_HealthChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD97AC59DF1C94712CDD85A /* Pods-sdkTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sdkTest.debug.xcconfig"; path = "Target Support Files/Pods-sdkTest/Pods-sdkTest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77654C522AB1909F00C1C26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77654C6E2AB197D800C1C26A /* OpenAI in Frameworks */,
+				328923223D3E7C8C2E6D90D7 /* Pods_HealthChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1544AA570443AC33B90FB7D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBBA11529D85FEB2E22CA5 /* Pods_HealthChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A5576D063CDCB621C3E5C2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CCD97AC59DF1C94712CDD85A /* Pods-sdkTest.debug.xcconfig */,
+				248724F428B092CB41D88BB1 /* Pods-sdkTest.release.xcconfig */,
+				0E13CBA950E6EA0CEF4EB9DE /* Pods-HealthChat.debug.xcconfig */,
+				49637E8CCB31F52DAB4D1A6D /* Pods-HealthChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		77654C4C2AB1909F00C1C26A = {
+			isa = PBXGroup;
+			children = (
+				77654C572AB1909F00C1C26A /* HealthChat */,
+				77654C562AB1909F00C1C26A /* Products */,
+				1A5576D063CDCB621C3E5C2A /* Pods */,
+				1544AA570443AC33B90FB7D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77654C562AB1909F00C1C26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77654C552AB1909F00C1C26A /* HealthChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77654C572AB1909F00C1C26A /* HealthChat */ = {
+			isa = PBXGroup;
+			children = (
+				776E07E82AB9A629001EAADC /* Models */,
+				776E07E52AB98A0B001EAADC /* Extensions */,
+				77654C732AB19FF400C1C26A /* Resources */,
+				77654C722AB19E7500C1C26A /* Views */,
+				77654C712AB19E6300C1C26A /* ViewModels */,
+				77654C662AB190A100C1C26A /* Info.plist */,
+			);
+			path = HealthChat;
+			sourceTree = "<group>";
+		};
+		77654C712AB19E6300C1C26A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				77654C6F2AB19BBB00C1C26A /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		77654C722AB19E7500C1C26A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77654C5C2AB1909F00C1C26A /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77654C732AB19FF400C1C26A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77654C582AB1909F00C1C26A /* AppDelegate.swift */,
+				77654C5A2AB1909F00C1C26A /* SceneDelegate.swift */,
+				77654C612AB190A100C1C26A /* Assets.xcassets */,
+				77654C632AB190A100C1C26A /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		776E07E52AB98A0B001EAADC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				776E07E62AB98A1E001EAADC /* UITableViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		776E07E82AB9A629001EAADC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				776E07E92AB9A65C001EAADC /* PromptAndResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77654C542AB1909F00C1C26A /* HealthChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77654C692AB190A100C1C26A /* Build configuration list for PBXNativeTarget "HealthChat" */;
+			buildPhases = (
+				CBAD64E9DA146344AD17C202 /* [CP] Check Pods Manifest.lock */,
+				77654C512AB1909F00C1C26A /* Sources */,
+				77654C522AB1909F00C1C26A /* Frameworks */,
+				77654C532AB1909F00C1C26A /* Resources */,
+				43FAF9EBBD1953561E52EC40 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthChat;
+			packageProductDependencies = (
+				77654C6D2AB197D800C1C26A /* OpenAI */,
+			);
+			productName = sdkTest;
+			productReference = 77654C552AB1909F00C1C26A /* HealthChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77654C4D2AB1909F00C1C26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					77654C542AB1909F00C1C26A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 77654C502AB1909F00C1C26A /* Build configuration list for PBXProject "HealthChat" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77654C4C2AB1909F00C1C26A;
+			packageReferences = (
+				77654C6C2AB197D800C1C26A /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 77654C562AB1909F00C1C26A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77654C542AB1909F00C1C26A /* HealthChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77654C532AB1909F00C1C26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77654C652AB190A100C1C26A /* LaunchScreen.storyboard in Resources */,
+				77654C622AB190A100C1C26A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43FAF9EBBD1953561E52EC40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthChat/Pods-HealthChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthChat/Pods-HealthChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthChat/Pods-HealthChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBAD64E9DA146344AD17C202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77654C512AB1909F00C1C26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				776E07EA2AB9A65C001EAADC /* PromptAndResponseModel.swift in Sources */,
+				77654C5D2AB1909F00C1C26A /* ViewController.swift in Sources */,
+				776E07E72AB98A1E001EAADC /* UITableViewExtension.swift in Sources */,
+				77654C592AB1909F00C1C26A /* AppDelegate.swift in Sources */,
+				77654C5B2AB1909F00C1C26A /* SceneDelegate.swift in Sources */,
+				77654C702AB19BBB00C1C26A /* ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77654C632AB190A100C1C26A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77654C642AB190A100C1C26A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77654C672AB190A100C1C26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77654C682AB190A100C1C26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77654C6A2AB190A100C1C26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E13CBA950E6EA0CEF4EB9DE /* Pods-HealthChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q48XJA2WBQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onuraltintas.healthchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77654C6B2AB190A100C1C26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49637E8CCB31F52DAB4D1A6D /* Pods-HealthChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q48XJA2WBQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HealthChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onuraltintas.healthchat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77654C502AB1909F00C1C26A /* Build configuration list for PBXProject "HealthChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77654C672AB190A100C1C26A /* Debug */,
+				77654C682AB190A100C1C26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77654C692AB190A100C1C26A /* Build configuration list for PBXNativeTarget "HealthChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77654C6A2AB190A100C1C26A /* Debug */,
+				77654C6B2AB190A100C1C26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		77654C6C2AB197D800C1C26A /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		77654C6D2AB197D800C1C26A /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77654C6C2AB197D800C1C26A /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 77654C4D2AB1909F00C1C26A /* Project object */;
+}
